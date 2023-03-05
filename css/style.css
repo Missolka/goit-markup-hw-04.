@@ -447,9 +447,8 @@ flex-basis: calc((100% - 48px) /3);
     border-radius: 50%;
     background-color:var(--button-color);
     display:inline-block;
-    margin-right: 24px;
+  
  }
-
  .social-list-item{
   flex-basis:calc((100% - 72px) /4);
  }
@@ -457,6 +456,7 @@ flex-basis: calc((100% - 48px) /3);
     display: flex;
     justify-content: center;
     margin-top: 8px;
+    gap: 24px;
  }
  .social-list-icon{
     display: inline-block;
