@@ -8,6 +8,10 @@
     --body-color:#434455;
     --description-color:#E7E9FC;
      }
+
+.section{
+  padding: 120px p;
+}
 .container{
    max-width: 1158px;
    padding:0 15px;
@@ -111,7 +115,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
      color:var(--accent-text-color);
  }
  .hero{
-    max-width: 1440px;
     background-image: linear-gradient(
       rgba(46,47, 66, 0.7),
      rgba(46, 47, 66, 0.7)
@@ -119,12 +122,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
     url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
-    background-color: var();
     text-align: center;
-    max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
  }
  .background{
    width: 1440px;
@@ -281,11 +281,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
     margin-left: auto;
     margin-right: auto;
  }
-.about-hero-section{
-   padding-bottom:120px; 
-   padding-top: 96px;
-   padding-bottom : 72px;
-}
  .about-list{
    display: flex;    
    flex-wrap: wrap;
@@ -314,7 +309,6 @@ flex-basis: calc((100% - 48px) /3);
 .about-item:focus{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 .img-text{
    padding-top:32px;
    padding-bottom: 32px;
@@ -338,11 +332,10 @@ flex-basis: calc((100% - 48px) /3);
     margin-right: 0;
  } 
  .features-section {
-   padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
  }
  .features-item {
-   display:flex;
-   flex-wrap: wrap;
    gap: 24px;
    flex-basis: calc((100% - 72px) /4);
  }
@@ -350,11 +343,9 @@ flex-basis: calc((100% - 48px) /3);
    display: flex;
    justify-content:center;
    align-items: center;
-   width: 264px;
    height: 112px;
    background-color:var(--footer-color);
    border-radius: 4px;
-   margin-top: 120px;
  }
  .features-title{
  font-weight: 500;
@@ -362,6 +353,8 @@ flex-basis: calc((100% - 48px) /3);
  line-height: 1.2;
  letter-spacing: 0.02em;
  color:var(--accent-text-color);
+ margin-top: 8px;
+ margin-bottom: 8px;
  }
  .features-list{
    display:flex;
@@ -387,6 +380,7 @@ flex-basis: calc((100% - 48px) /3);
  margin-bottom: 72px;
  }
  .abilities-section{
+   padding-top: 0;
    padding-bottom: 120px;
  }
  .abilities-set{
@@ -404,7 +398,6 @@ flex-basis: calc((100% - 48px) /3);
    justify-content: center;
    gap: 24px;
    flex-wrap: wrap;
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
  }
  .team-descr {
  padding: 32px 16px 32px 16px;
@@ -414,6 +407,7 @@ flex-basis: calc((100% - 48px) /3);
  }
 .item{
    flex-basis: calc((100% - 72px) / 4);
+ 
 }
 .card-item{
    flex-basis: calc((100% - 48px) / 3);
@@ -468,6 +462,7 @@ flex-basis: calc((100% - 48px) /3);
    background-color:var(--background-color);
 }
  .about-hero-section{
+  padding-top: 120px;
    padding-bottom: 120px;
  }
  .about-list{
@@ -533,6 +528,9 @@ flex-basis: calc((100% - 48px) /3);
    text-align:left;
   margin-bottom: 32px;
  }    
+ .customers-section{
+  padding-bottom: 120px;
+ }
  .clients-headline{
    font-family: 'Roboto';
    font-style: normal;
@@ -547,32 +545,28 @@ flex-basis: calc((100% - 48px) /3);
    margin-bottom: 72px;
  }
  .clients-list{
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 120px;
- }
- .clients-box{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 4px;
-   border: 1px solid #8E8F99;
-   border-radius: 4px;
-   width: 168px;
-   height: 88px;
- }
+  display: flex;
+  gap: 24px;
+  border-radius: 4px;
 
- .clients-item:hover,
- .clients-item:focus{
+ }
+ .clients-link{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+width: 168px;
+height: 88px;
+ }
+ .clients-icon:hover,
+ .clients-icon:focus{
   color:var(--background-color);
-
  }
 
- .clients-item:hover{
- border: 1px solid var(--background-color);
-   }
-
+.clients-icon{ 
+  color: #AFB1B8;
+}
  .clients-icon{
    fill:currentColor;
  }
@@ -654,8 +648,8 @@ flex-basis: calc((100% - 48px) /3);
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 50px;
-   height: 50px;
+   width: 40px;
+   height: 40px;
    border-radius: 50%;
    background-color: rgba(255, 255, 255, 0.1);
  }
