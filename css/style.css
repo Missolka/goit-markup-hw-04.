@@ -547,7 +547,7 @@ flex-basis: calc((100% - 48px) /3);
  .clients-list{
   display: flex;
   gap: 24px;
-  border-radius: 4px;
+  justify-content: center;
 
  }
  .clients-link{
